@@ -1,0 +1,2 @@
+rootProject.name='android_simple_memo'
+include ':app'

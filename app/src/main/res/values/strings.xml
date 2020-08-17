@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SIMPLE MEMO</string>
+    <string name="memo_hint">メモ...</string>
+
+    <string name="save_btn">保存</string>
+    <string name="cancel_btn">キャンセル</string>
+    <string name="delete_btn">削除</string>
+
+</resources>
