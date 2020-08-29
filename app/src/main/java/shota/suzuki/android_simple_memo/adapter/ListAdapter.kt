@@ -1,12 +1,12 @@
-package com.example.android_simple_memo.adapter
+package shota.suzuki.android_simple_memo.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.android_simple_memo.R
-import com.example.android_simple_memo.common.DataParseObject
-import com.example.android_simple_memo.data.Memo
+import shota.suzuki.android_simple_memo.R
+import shota.suzuki.android_simple_memo.common.DataParseObject
+import shota.suzuki.android_simple_memo.data.Memo
 import kotlinx.android.synthetic.main.list_item.view.*
 
 class ListAdapter(private val listener: OnItemClickListener): RecyclerView.Adapter<ListAdapter.MemoViewHolder>() {

@@ -1,11 +1,11 @@
-package com.example.android_simple_memo.data
+package shota.suzuki.android_simple_memo.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.example.android_simple_memo.common.DateConverter
+import shota.suzuki.android_simple_memo.common.DateConverter
 
 @Database(entities = [Memo::class], version = 1, exportSchema = false)
 @TypeConverters(DateConverter::class)

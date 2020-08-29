@@ -1,4 +1,4 @@
-package com.example.android_simple_memo.fragment
+package shota.suzuki.android_simple_memo.fragment
 
 import android.os.Bundle
 import android.text.Editable
@@ -10,10 +10,10 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 
-import com.example.android_simple_memo.R
-import com.example.android_simple_memo.adapter.ListAdapter
-import com.example.android_simple_memo.data.Memo
-import com.example.android_simple_memo.data.MemoViewModel
+import shota.suzuki.android_simple_memo.R
+import shota.suzuki.android_simple_memo.adapter.ListAdapter
+import shota.suzuki.android_simple_memo.data.Memo
+import shota.suzuki.android_simple_memo.data.MemoViewModel
 import kotlinx.android.synthetic.main.fragment_list.*
 import kotlinx.android.synthetic.main.fragment_list.view.*
 import java.util.*
@@ -48,7 +48,11 @@ class ListFragment : Fragment(), ListAdapter.OnItemClickListener {
                     mMemoViewModel.insertData(memo)
                     Toast.makeText(requireContext(), "メモを保存しました", Toast.LENGTH_SHORT).show()
                 } else {
-                    val memo = Memo(Integer.parseInt(id), content, Date())
+                    val memo = Memo(
+                        Integer.parseInt(id),
+                        content,
+                        Date()
+                    )
                     mMemoViewModel.updateData(memo)
                     Toast.makeText(requireContext(), "メモを更新しました", Toast.LENGTH_SHORT).show()
                 }
@@ -61,7 +65,11 @@ class ListFragment : Fragment(), ListAdapter.OnItemClickListener {
 
         view.cancel_or_delete_btn.setOnClickListener(View.OnClickListener {
             if (!mMemoViewModel.isEdit) {
-                val memo = Memo(Integer.parseInt(content_id.text.toString()), content_body.text.toString(), Date())
+                val memo = Memo(
+                    Integer.parseInt(content_id.text.toString()),
+                    content_body.text.toString(),
+                    Date()
+                )
                 mMemoViewModel.deleteData(memo)
                 Toast.makeText(requireContext(), "メモを削除しました", Toast.LENGTH_SHORT).show()
             }

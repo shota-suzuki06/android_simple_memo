@@ -1,4 +1,4 @@
-package com.example.android_simple_memo
+package shota.suzuki.android_simple_memo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

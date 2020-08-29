@@ -1,4 +1,4 @@
-package com.example.android_simple_memo.common
+package shota.suzuki.android_simple_memo.common
 
 import androidx.room.TypeConverter
 import java.util.*

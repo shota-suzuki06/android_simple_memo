@@ -1,4 +1,4 @@
-package com.example.android_simple_memo.data
+package shota.suzuki.android_simple_memo.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

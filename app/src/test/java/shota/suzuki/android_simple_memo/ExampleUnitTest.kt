@@ -1,4 +1,4 @@
-package com.example.android_simple_memo
+package shota.suzuki.android_simple_memo
 
 import org.junit.Test
 

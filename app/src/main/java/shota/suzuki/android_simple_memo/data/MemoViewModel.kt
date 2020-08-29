@@ -1,4 +1,4 @@
-package com.example.android_simple_memo.data
+package shota.suzuki.android_simple_memo.data
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -14,7 +14,9 @@ class MemoViewModel(application: Application): AndroidViewModel(application) {
     private val repository: MemoRepository
 
     init {
-        val memoDao = MemoDatabase.getDatabase(application).memoDao()
+        val memoDao = MemoDatabase.getDatabase(
+            application
+        ).memoDao()
         repository = MemoRepository(memoDao)
         readAllData = repository.readAllData
     }
